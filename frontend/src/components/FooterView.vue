@@ -37,7 +37,7 @@
         <div v-else-if="activeModal === 'dieukhoan'">
           <h3>Điều Khoản Mượn Sách</h3>
           <p>1. Độc giả cần tài khoản hợp lệ để sử dụng hệ thống.</p>
-          <p>2. Thời gian mượn tối đa là 20 ngày; hệ thống sẽ nhắc trước 3 ngày.</p>
+          <p>2. Thời gian mượn tối đa là 14 ngày; Quá hạn 1 ngày phạt 5000đ.</p>
           <p>3. Phí phạt áp dụng nếu trễ hạn hoặc hư hỏng sách.</p>
           <p>4. Có thể gia hạn nếu yêu cầu trước hạn.</p>
         </div>
