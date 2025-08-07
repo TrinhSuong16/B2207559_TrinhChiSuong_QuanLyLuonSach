@@ -143,10 +143,10 @@ button.active {
         Danh sách Độc giả
       </button>
       <button @click="activeTab = 'nhanvien'" :class="{ active: activeTab === 'nhanvien', 'btn-nhanvien': true }">
-        Danh sách Nhân viên
+        Danh sách Nhân viên 
       </button>
       <button @click="showNhanVienForm = true" class="btn-add-nhanvien">
-        + Thêm nhân viên
+        + Thêm nhân viên mới
       </button>
     </div>
 

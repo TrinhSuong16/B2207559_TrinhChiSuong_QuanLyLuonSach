@@ -69,7 +69,7 @@ button:hover {
 <template>
   <div class="container d-flex justify-content-center align-items-center vh-50 mt-5">
     <div class="card p-3 shadow-lg" style="max-width: 400px; width: 100%">
-      <h2 class="text-center">Đăng nhập độc giả</h2>
+      <h2 class="text-center">Đăng nhập để trải nghiệm các tiện ích của Thư viện TCS</h2>
       <form @submit.prevent="handleLogin">
         <div class="mb-3">
           <label for="dienthoaiDG" class="form-label">Số điện thoại</label>
@@ -100,7 +100,7 @@ button:hover {
           to="/loginnhanvien"
           class="text-decoration-none text-muted"
         >
-          Bạn đăng nhập với tư cách là <u>nhân viên</u>?
+          Bạn đăng nhập với tư cách là <u>quản lý</u>?
         </router-link>
       </div>
     </div>

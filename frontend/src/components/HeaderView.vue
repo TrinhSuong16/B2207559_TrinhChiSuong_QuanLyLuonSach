@@ -3,7 +3,7 @@
     <!-- Bên trái: Logo + Tên -->
     <div class="header-left">
       <img src="@/assets/logo.png" alt="Logo" class="logo" />
-      <span class="store-name">Nhà sách TCS</span>
+      <span class="store-name">Thư Viện TCS</span>
     </div>
 
     <!-- Navbar nằm ngay bên phải logo + tên -->
@@ -27,13 +27,13 @@
 
         <template v-else-if="userRole === 'quanly'">
           <li class="nav-item">
+            <router-link class="nav-link" to="/theodoimuon">Theo Dõi Mượn Sách</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/quanlysach">Quản Lý Sách</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/quanlytaikhoan">Quản Lý Tài Khoản</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/theodoimuon">Theo Dõi Mượn Sách</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/taikhoan">Thông Tin Tài Khoản</router-link>
