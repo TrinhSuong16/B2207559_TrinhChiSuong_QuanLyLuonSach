@@ -1,68 +1,93 @@
-
 <style scoped>
-:root {
-  --primary-color: #b89e25;
-  --hover-color: #e2bc13;
+/* Wrapper tổng */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fdfcf5, #f5f1e0);
+  padding: 40px 20px;
 }
 
-.container {
-  background: linear-gradient(135deg, #f9f6ee, #fffbe6);
-  padding: 50px 0;
-  border-radius: 10px;
+/* Khung login */
+.login-card {
+  background-color: #fffdf7;
+  border-radius: 16px;
+  max-width: 650px; /* ← tăng từ 550px lên 650px hoặc tùy ý */
+  width: 100%;
+  padding: 60px 35px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
+/* Tiêu đề */
 h2 {
-  color: var(--primary-color);
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4b3f2f;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
+/* Label */
+.form-label {
+  font-weight: 500;
+  color: #4e4e4e;
+}
+
+/* Input */
 .form-control {
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: #f3f6ff;
 }
 
 .form-control:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(184, 158, 37, 0.5);
+  outline: none;
+  border-color: #b89e25;
+  box-shadow: 0 0 0 3px rgba(184, 158, 37, 0.2);
 }
 
-button {
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 8px;
+/* Nút đăng nhập */
+button[type="submit"] {
+  background-color: #b89e25;
+  border-color: #b89e25;
+  border-radius: 10px;
+  font-weight: 600;
   padding: 10px;
   font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  transition: all 0.25s ease;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+  width: 100%;
 }
 
-button:hover {
-  background-color: blueviolet;
-  transform: scale(1.05);
+button[type="submit"]:hover {
+  background-color: #a3861f;
+  border-color: #a3861f;
 }
 
+/* Link đăng nhập quản lý */
 .text-muted {
   font-size: 14px;
-  transition: color 0.2s ease-in-out;
+  color: #6c6c6c;
+  transition: color 0.2s ease;
+  text-align: center;
+}
+
+.text-muted u {
+  color: #967e1f;
 }
 
 .text-muted:hover {
-  color: var(--primary-color);
+  color: #000;
+  text-decoration: underline;
 }
 </style>
 
